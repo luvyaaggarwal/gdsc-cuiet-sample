@@ -9,6 +9,17 @@ body {
     background-color: #f2f2f2;
 }
 
+hr {
+    border: 0;
+    height: 1px;
+    background: gray;
+    margin: 0;
+    position: sticky;
+    top: 100px;
+    width: 100%;
+    z-index: 0;
+}
+
 .top_div {
     background-color: white;
     color: grey;
@@ -23,8 +34,7 @@ body {
     transition: background-color 0.3s ease, height 0.3s ease, padding 0.3s ease;
 }
 
-.top_div.shrink-blue {
-    background-color: rgb(159, 214, 248);
+.top_div.shrink {
     height: 70px;
     padding: 0.1%;
 }
@@ -67,10 +77,6 @@ body {
     text-decoration: none;
 }
 
-.top_div.shrink-blue .nav-items {
-    background-color: rgb(159, 214, 248);
-}
-
 .nav-items:not(:last-child) {
     margin-right: -5px;
 }
@@ -86,6 +92,107 @@ body {
     width: 24px;
     height: 24px;
     margin-left: 10px;
+}
+
+.home-section {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    gap: 50px;
+}
+
+.content-text,
+.about-us-text {
+    font-size: x-large;
+}
+
+.content-image {
+    height: 400px;
+    width: 600px;
+    margin-top: 50px;
+}
+
+.about-us-text {
+    margin-top: 30px;
+}
+
+.about-us {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px;
+    gap: 50px;
+}
+
+.events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+    gap: 50px;
+}
+
+.headings-text {
+    font-size: xxx-large;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.events-box {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    gap: 200px;
+    scroll-behavior: smooth;
+    justify-content: center;
+}
+
+.event-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.event-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.event-description {
+    padding: 15px;
+    text-align: center;
+    font-size: large;
+    color: #333;
+}
+
+.event-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav-button {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-button:hover {
+    background-color: #ddd;
 }
 
 @media (max-width: 768px) {
@@ -114,5 +221,9 @@ body {
         text-align: center;
         background-color: white;
         border-bottom: 1px solid #ddd;
+    }
+
+    .events-box {
+        flex-direction: column;
     }
 }
