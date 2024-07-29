@@ -27,7 +27,9 @@ a {
 }
 
 .top_div {
-    background-color: white;
+    background: url(images/top-banner.png);
+    background-size: cover;
+    background-position: center center;
     color: grey;
     padding: 0 2%;
     display: flex;
@@ -37,12 +39,13 @@ a {
     position: sticky;
     top: 0;
     z-index: 1;
-    transition: background-color 0.3s ease, height 0.3s ease, padding 0.3s ease;
+    transition: background-image 2s ease, height 0.3s ease, padding 0.3s ease;
 }
 
 .top_div.shrink {
     height: 70px;
     padding: 0.1%;
+    background-image: url(images/white-blank.png);
 }
 
 .logo-title {
@@ -60,6 +63,7 @@ a {
     width: 70px;
     height: 48px;
     transition: width 0.3s ease, height 0.3s ease;
+    margin-left: 1rem;
 }
 
 .menu-toggle {
@@ -76,7 +80,7 @@ a {
     color: black;
     font-size: 18px;
     padding: 15px 20px;
-    background-color: white;
+    background-color: transparent;
     transition: transform 0.2s, background-color 0.3s ease, color 0.3s ease, text-decoration-color 0.3s ease;
     display: flex;
     align-items: center;
