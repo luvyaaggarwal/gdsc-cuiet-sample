@@ -1,3 +1,5 @@
+/* General Styles */
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -108,14 +110,17 @@ a {
 
 .home-section {
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     padding: 5rem;
     gap: 3.125rem;
     background-color: #a1c8f4;
-    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-.content-text,
+.content-text{
+    max-width: 40rem;
+    font-size: 1.5rem;
+}
 .about-us-text {
     font-size: 1.5rem;
 }
@@ -160,12 +165,11 @@ a {
 
 .events-box {
     display: flex;
-    overflow: hidden;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 75rem;
-    gap: 12.5rem;
+    gap: 2rem;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .event-details {
@@ -331,8 +335,8 @@ a {
         flex-direction: column;
         gap: 1.25rem;
         justify-content: center;
-        margin-left: 0rem;
-        padding: none;
+        margin-left: 0;
+        padding: 0;
     }
 
     .team-grid {
@@ -358,10 +362,8 @@ a {
     }
 
     .content-image {
-        height: 15rem;
         width: 100%;
-        margin-left: none;
-        margin-right: none;
+        height: auto;
     }
 
     .home-section {
