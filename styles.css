@@ -1,4 +1,5 @@
 html {
+    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
@@ -18,6 +19,11 @@ hr {
     top: 100px;
     width: 100%;
     z-index: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .top_div {
@@ -47,6 +53,7 @@ hr {
     font-weight: 900;
     color: darkgray;
     gap: 15px;
+    text-shadow: 0.2px 0.2px darkslategrey;
 }
 
 .logo {
@@ -99,6 +106,7 @@ hr {
     justify-content: center;
     padding: 80px;
     gap: 50px;
+    background-color: #a1c8f4;
 }
 
 .content-text,
@@ -112,15 +120,18 @@ hr {
     margin-top: 50px;
 }
 
-.about-us-text {
+.about-us-text,
+.contact-us {
     margin-top: 30px;
 }
 
-.about-us {
+.about-us,
+.contact-us {
     display: flex;
     justify-content: space-evenly;
     padding: 80px;
     gap: 50px;
+    background-color: #9fd8b3;
 }
 
 .events {
@@ -129,6 +140,7 @@ hr {
     align-items: center;
     padding: 80px;
     gap: 50px;
+    background-color: #fdd784;
 }
 
 .headings-text {
@@ -142,8 +154,7 @@ hr {
     overflow: hidden;
     width: 100%;
     max-width: 1200px;
-    gap: 200px;
-    scroll-behavior: smooth;
+    gap: 20px;
     justify-content: center;
 }
 
@@ -160,7 +171,7 @@ hr {
 }
 
 .event-image {
-    width: 300px;
+    width: 100%;
     height: 300px;
     object-fit: cover;
 }
@@ -195,6 +206,70 @@ hr {
     background-color: #ddd;
 }
 
+.team {
+    padding: 80px;
+    background-color: #ff867c;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.team-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-name {
+    font-size: large;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.team-role {
+    font-size: medium;
+    color: gray;
+}
+
+.contact-us {
+    background-color: #6ca0dc;
+    margin-top: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-links {
+    background-color: white;
+    padding: 30px 40px;
+    font-size: x-large;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-links img {
+    vertical-align:middle;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.map {
+    margin-right: 160px;
+}
+
 @media (max-width: 768px) {
     .item_shelf_div {
         display: none;
@@ -225,5 +300,10 @@ hr {
 
     .events-box {
         flex-direction: column;
+        gap: 20px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
