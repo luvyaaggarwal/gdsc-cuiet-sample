@@ -262,7 +262,6 @@ a {
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .contact-links {
@@ -273,7 +272,7 @@ a {
     max-width: 50rem;
     margin: 0 auto;
     text-align: left;
-    width: 100%;
+    width: fit-content;
 }
 
 .contact-links img {
@@ -282,9 +281,8 @@ a {
     margin-top: 0.625rem;
 }
 
-.map {
-    width: 100%;
-    margin-left: 30rem;
+.video{
+    margin-right: 8rem;
 }
 
 @media (max-width: 800px) {
